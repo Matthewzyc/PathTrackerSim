@@ -1,8 +1,0 @@
-prefix=/home/matthew/Workspace/path_tracker_sim/devel
-
-Name: path_tracker
-Description: Description of path_tracker
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
