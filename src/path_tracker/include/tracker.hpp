@@ -19,6 +19,8 @@ private:
     void scanCallback(const sensor_msgs::LaserScan::ConstPtr& msg);
     void publishCommand(double control_signal);
 
+    const double PI_ = 3.141592653589793;
+
     ros::NodeHandle nh_;
     ros::Subscriber scan_subscriber_;
     ros::Publisher cmd_publisher_;

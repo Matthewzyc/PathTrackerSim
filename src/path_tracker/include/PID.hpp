@@ -13,6 +13,7 @@ public:
     PID(double &control_signal) : control_signal_(control_signal) {}
     void setParameters(double kp, double ki, double kd);
     void calculate(double average_lateral_deviation);
+
 private:
     double &control_signal_;
     double kp_;
@@ -21,6 +22,7 @@ private:
     double prev_error_;
     double integral_;
     double derivative_;
+    double prev_derivative_;
 };
 
 #endif
